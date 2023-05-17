@@ -1,0 +1,22 @@
+{
+  "name": "foo",
+  "version": "0.1.0",
+  "publishConfig": {
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts"
+  },
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "ws-scripts build",
+    "lint": "ws-scripts lint",
+    "test": "ws-scripts test",
+    "typecheck": "ws-scripts typecheck"
+  },
+  "dependencies": {
+    "bar": "*"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "ws-scripts": "workspace:*"
+  }
+}
